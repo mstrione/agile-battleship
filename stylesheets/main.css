@@ -1,18 +1,68 @@
-footer {
+body {
+  background-color: #7b7b7b;
+  color: white;
+  font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-bottom-color: #89dabd;
+  border-width: 0 0 1px 0;
+  color: white !important;
+  padding: 10px;
+}
+
+footer, 
+footer a:link, 
+footer a:visited {
   z-index: 1030;
+  font-size: 10px;
+  color: #ffffff !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #4ed3a7;
+  border-color: #33af86;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #2aad82;
+  border-color: #157354;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #28ad81;
+  border-color: #11a272;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  color: #fff;
+  background-color: #2baf83;
+  border-color: #1b8e68;
 }
 
 .board {
   border-collapse: collapse;
-  background-color: #d9edf7;
+  background-color: #89dabd;
 	color: #333;
 }
 
+.logo {
+  width: 130px;
+  padding: 5px;
+  float: left;
+  margin-right: 10px;
+}
+
 .cell {
-  border-top: 1px solid #bce8f1;
-  border-left: 1px solid #bce8f1;
-  border-right: 1px solid #bce8f1;
-  border-bottom: 1px solid #bce8f1;
+  border-top: 1px solid #7b7b7b;
+  border-left: 1px solid #7b7b7b;
+  border-right: 1px solid #7b7b7b;
+  border-bottom: 1px solid #7b7b7b;
   text-align: center;
   min-width: 40px;
   position: relative;
@@ -114,12 +164,6 @@ footer {
                                 horizontally inside the column */
   }
 
-  /**
-   *  Do NOT include this part into your stylesheet.
-   *  "flex: 1" or "flex-grow: 1" is added to make the inner div
-   *  - Which is also a flex-item - take up all the horizontal space
-   *  available space inside the flex container (.col-* elements)
-   */
   .vertical-align > [class^="col-"] > div,
   .vertical-align > [class*=" col-"] > div {
     /* flex: 1; */
@@ -176,15 +220,51 @@ footer {
   animation-delay: .2s;
 }
 
-.logo-text {
-  font-family: 'Russo One', sans-serif;
-}
-
 .navbar-brand {
-  color: #555 !important;
+  color: #89dabd !important;
 }
 
 .miss-cell {
   background-color: #e3e3e3;
   border-color: #e3e3e3;
+}
+
+.fa-ship {
+  color: #89dabd;
+}
+
+.panel-info>.panel-heading {
+  color: #78d8b7;
+  background-color: #525252;
+  border-color: transparent;
+}
+
+.panel-success>.panel-heading {
+  color: #fefefe;
+  background-color: 03522D;
+  border-color: transparent;
+}
+
+.panel {
+  border: 0px;
+}
+
+.cell-title-left {
+  border-color: #7b7b7b !important;
+  background-color: #7b7b7b;
+  color: #fefefe;
+}
+
+.cell-title-top {
+  border-color: #7b7b7b !important;
+  background-color: #7b7b7b;
+  color: #fff;
+}
+
+.row.message {
+  padding: 70px;
+}
+
+.alert {
+  text-align: center;
 }
