@@ -268,3 +268,16 @@ footer a:visited {
 .alert {
   text-align: center;
 }
+
+.showBoat {
+  border: 1px solid #7b7b7b !important;
+}
+
+.miss-cell {
+  background-color: #89dabd;
+  border-color: #7b7b7b;
+}
+
+.text-muted {
+  color: #0089ff;
+}
