@@ -27,9 +27,9 @@ footer a:visited {
 .ships {
   vertical-align: middle;
   width: 100%;
-  padding: 2px 0px 20px 0;
+  background: #525252;
+  margin-bottom: 20px;
 }
-
 
 .btn-primary {
   color: #fff;
