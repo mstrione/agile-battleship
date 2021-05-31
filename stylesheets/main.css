@@ -29,6 +29,7 @@ footer a:visited {
   width: 100%;
   background: #525252;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 
 .btn-primary {
