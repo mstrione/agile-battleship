@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Agile Battleship V1.0</title>
+		<title>Batalla Naval V1.0</title>
 		<meta charset="utf-8" /> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -15,7 +15,7 @@
 		<script type="text/javascript" src="javascripts/app/Boat.js"></script>
 		<script type="text/javascript" src="javascripts/app/Cell.js"></script>
 		<script type="text/javascript" src="javascripts/app/Board.js"></script>
-		<script type="text/javascript" src="javascripts/app/Game.js"></script>
+		<script type="text/javascript" src="javascripts/app/Game-sp.js"></script>
 
 		<script type="text/javascript" src="javascripts/boot.js"></script>
 		
@@ -37,17 +37,17 @@
 			<nav class="navbar navbar-default ">
 			  <div class="container-fluid">
 			    <div class="navbar-header">
-			      <a class="navbar-brand logo-text" href="#">Agile Battleship V1.0</a>
+			      <a class="navbar-brand logo-text" href="#">Batalla Naval V1.0</a>
 			    </div>
 
 
 		      <div class="navbar-form navbar-right" role="initGame">
 
-		      	<label for="shotsPerIteration">Shots per iteration:&nbsp;</label>
+		      	<label for="shotsPerIteration">Disparos por iteración:&nbsp;</label>
 		      	<div class="input-group">
 				      <input type="number" min="1" max="40" value="40" id="shotsPerIteration" class="form-control">
 				      <span class="input-group-btn">
-				        <button class="btn btn-primary" type="button" id="newGame">New game</button>
+				        <button class="btn btn-primary" type="button" id="newGame">Nuevo juego</button>
 				      </span>
 					  <span class="input-group-btn space"></span>
 					  <span class="input-group-btn"><a href="index-sp.html"><img class="flag" src="images/esp.png"></a></span>
@@ -64,8 +64,8 @@
 			<div class="row message">
 				<div class="col-xs-12 text-center">
 					<i class="fa fa-ship fa-5x animated pulse"></i>
-					<h2>Welcome</h2>
-					<p class="lead">Start a new game by selecting the number of shots per iteration</p>
+					<h2>Bienvenidos</h2>
+					<p class="lead">Comienza un nuevo juego eligiendo la cantidad de disparos por iteración.</p>
 				</div>
 			</div>
 
@@ -75,7 +75,7 @@
 	  			<div class="row stats animated fadeInRight hidden">
 
 					<div class="col-xs-12 text-center">
-						<span>Ships to destroy</span>
+						<span>Navíos a destruir</span>
 						<img src="images/ships2.png" class="ships">
 					</div>
 
@@ -90,7 +90,7 @@
 							        <div class="huge">
 							          <span id="totalShotsRemaining"></span>
 							        </div>
-							        <div>Total shots remaining</div>
+							        <div>Total de disparos disponibles</div>
 							      </div>
 							    </div>
 							  </div>
@@ -108,7 +108,7 @@
 							        <div class="huge">
 							          <span id="shotsRemainingForIteration"></span> 
 							        </div>
-							        <div>Shots remaining for iteration</div>
+							        <div>Disparos disponibles en la iteración</div>
 							      </div>
 							    </div>
 							  </div>
@@ -145,7 +145,7 @@
 		</div>
 		
 	
-		<footer class="text-center">Modified by <a target="_blank" href="https://www.linkedin.com/in/maurostrione/">Mauro Strione</a> - Credits to Zilverline / Daniël van Hoesel, Bob Forma, Mark Suurmond, inspired by <a target="_blank" href="https://github.com/zilverline/battleship">Battleship</a></footer>
+		<footer class="text-center">Modificado por <a target="_blank" href="https://www.linkedin.com/in/maurostrione/">Mauro Strione</a> - Créditos a Zilverline / Daniël van Hoesel, Bob Forma, Mark Suurmond, inspirado en <a target="_blank" href="https://github.com/zilverline/battleship">Battleship</a></footer>
 
 		
 	</body>

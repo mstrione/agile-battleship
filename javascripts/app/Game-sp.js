@@ -120,15 +120,15 @@ var GameView = Backbone.View.extend({
     if (endGameState === "lose") {
       console.log(diff);
       if(diff > 0){
-        $("#endGameResult").html('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong><i class="bi bi-emoji-smile"></i> Game over!</strong> You made a profit of ' + this.euros(diff) + '</div>');
+        $("#endGameResult").html('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong><i class="bi bi-emoji-smile"></i> ¡Juego finalizado!</strong> Obtuviste una ganancia de ' + this.euros(diff) + '</div>');
       }
       else if(diff < 0){
-        $("#endGameResult").html('<div class="alert alert-danger alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong><i class="bi bi-emoji-frown"></i> Game over!</strong> You lost ' + this.euros(diff) + '</div>');
+        $("#endGameResult").html('<div class="alert alert-danger alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong><i class="bi bi-emoji-frown"></i> ¡Juego finalizado!</strong> Terminaste con pérdidas de ' + this.euros(diff) + '</div>');
       } else {
-        $("#endGameResult").html('<div class="alert alert-info alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong><i class="bi bi-emoji-neutral"></i> Game over!</strong> You ended up with no profit or loss</div>');
+        $("#endGameResult").html('<div class="alert alert-info alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong><i class="bi bi-emoji-neutral"></i> ¡Juego finalizado!</strong> Terminaste sin pérdidas ni ganancias</div>');
       }
     } else {
-      $("#endGameResult").html('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong><i class="bi bi-emoji-sunglasses"></i> You have destroyed the entire fleet!</strong> You rock...' + this.euros(diff) + '</div>');
+      $("#endGameResult").html('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong><i class="bi bi-emoji-sunglasses"></i> ¡Destruiste la flota complera!</strong> Tu si que sabes... ' + this.euros(diff) + '</div>');
     }
   },
   euros: function(amount) {

@@ -2,7 +2,15 @@ body {
   background-color: #7b7b7b;
   color: white;
   font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+}
 
+.space {
+  padding: 0 5px;
+}
+
+.flag {
+  width: 25px;
+  margin: 4px;
 }
 
 .navbar-default {
