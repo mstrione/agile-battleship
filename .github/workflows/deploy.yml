@@ -24,10 +24,6 @@ jobs:
             set net:timeout 15;
             set net:max-retries 3;
             open sftp://u70489319:$SFTP_PASSWORD@home433496742.1and1-data.host:22;
-            mirror --reverse --delete --verbose \
-              --exclude-glob .git/ \
-              --exclude-glob .github/ \
-              --exclude-glob .claude/ \
-              ./ /strione.com/agile-battleship;
+            mirror --reverse --delete --verbose --exclude-glob .git/ --exclude-glob .github/ --exclude-glob .claude/ ./ /strione.com/agile-battleship;
             bye
           "
